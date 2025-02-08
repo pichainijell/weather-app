@@ -1,0 +1,259 @@
+/* Outer Container for right container */
+.right-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar */
+.right-container-nav-bar{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* navbar tabs */
+.nav-bar-tabs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* for Today tab and hover */
+.today{
+    color: #c5c5c5;
+}
+
+.today:hover,
+.today:active,
+.tab-active{
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* for week tab and hover */
+.week{
+    color: #c5c5c5;
+}
+
+.week:hover,
+.week:active,
+.tab-active{
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* for click underline */
+.underline{
+    width: 50px;
+    height: 2px;
+    background-color: #1a1a1a;
+    margin: 1.2rem;
+    margin-top: 25px;
+}
+
+.underline-today{
+    transform: translate3d(-263%,0,0);
+    transition: 100ms;
+}
+
+.underline-week{
+    transform: translate3d(-150%,0,0);
+    transition: 100ms;
+}
+
+/* navbar metric */
+.nav-bar-metric{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for celsius tab and hover */
+.celsius{
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: #1a1a1a;
+    background-color: white;
+    font-size: medium;
+}
+
+.celsius:hover,
+.celsius:active,
+.metric-active{
+    color: white;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* for farenheit tab and hover */
+
+.farenheit{
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: #1a1a1a;
+    background-color: white;
+    font-size: medium;
+}
+
+.farenheit:hover,
+.farenheit:active,
+.metric-active{
+    color: white;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* for profile image */
+
+.profile-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-container-data-box{
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.right-container-week-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card{
+    width: 85px;
+    height: 110px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}
+
+.card-day{
+    margin: 5px;
+}
+
+.card-temp-img img{
+    width: 45px;
+    height: 45px;
+}
+
+.card-temp-value{
+    margin: 5px;
+}
+
+.right-container-today-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.right-container-today-highlight{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container-today-highlight-title{
+    flex: 2;
+    margin: 20px 0px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.right-container-today-highlight-cards{
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-container-today-highlight-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 220px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.guage{
+    flex: 2;
+    width: 50%;
+    max-width: 180px;
+    font-size: 32px;
+    color:#004033;
+    font-weight: 500;
+}
+
+.guage-body{
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #f3f3f4;
+    position:relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.guage-fill{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #ffbf5e;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition:transform 0.2s ease-out;
+}
+
+.guage-cover{
+    width: 75%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    color: white;
+}
